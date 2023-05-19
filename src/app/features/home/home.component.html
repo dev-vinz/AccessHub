@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <h1 class="text-center">Bienvenue</h1>
+
+  <p class="text-center mt-5 mb-3">
+    Projet réalisé dans le cadre du cours de Sécurité Informatique de la HE-Arc
+    Ingénierie, lors de l'année scolaire 2022 - 2023.
+  </p>
+
+  <p class="text-center">Réalisé par Alessio Comi et Vincent Jeannin</p>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card text-center text-bg-dark border-light">
+          <div class="card-body">
+            <h5 class="card-title">Page publique</h5>
+            <p class="card-text">
+              Cliquez sur le bouton ci-dessous pour accéder à la page publique,
+              qui ne nécessite aucune authentification.
+            </p>
+            <a routerLink="public" class="btn btn-outline-primary"
+              ><i class="bi bi-unlock"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card text-center text-bg-dark border-light">
+          <div class="card-body">
+            <h5 class="card-title">Page privée</h5>
+            <p class="card-text">
+              Cliquez sur le bouton ci-dessous pour accéder à la page privée,
+              qui nécessitera de vous authentifier via le service Auth0.
+            </p>
+            <a routerLink="private" class="btn btn-outline-primary"
+              ><i class="bi bi-lock"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

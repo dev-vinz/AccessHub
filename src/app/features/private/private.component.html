@@ -1,0 +1,53 @@
+<div class="container my-3">
+  <h1 class="text-center">Page privée</h1>
+
+  <p class="mt-5">
+    Cette page est sécurisée, vous pouvez y accéder uniquement après vous y être
+    authentifié.
+  </p>
+  <p>
+    Pour preuve, voici quelques informations concernant le compte que vous avez
+    utilisé pour vous connecter.
+  </p>
+
+  <div *ngIf="user | async as user">
+    <div class="text-center">
+      <img
+        style="max-width: 200px"
+        [src]="user.picture"
+        class="rounded mx-auto d-block"
+        alt="profile picture"
+      />
+    </div>
+    <div class="row mb-3 justify-content-center">
+      <label class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-3">
+        <input
+          type="email"
+          class="form-control-plaintext text-white"
+          [value]="user.email"
+        />
+      </div>
+    </div>
+    <div class="row mb-3 justify-content-center">
+      <label class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-3">
+        <input
+          type="text"
+          class="form-control-plaintext text-white"
+          [value]="user.name"
+        />
+      </div>
+    </div>
+    <div class="row mb-3 justify-content-center">
+      <label class="col-sm-2 col-form-label">Nickname</label>
+      <div class="col-sm-3">
+        <input
+          type="text"
+          class="form-control-plaintext text-white"
+          [value]="user.nickname"
+        />
+      </div>
+    </div>
+  </div>
+</div>
